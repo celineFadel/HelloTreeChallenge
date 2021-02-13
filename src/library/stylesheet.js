@@ -252,13 +252,13 @@ export const NotificationsStyles = StyleSheet.create({
     fontWeight: 'bold',
     color: colors.primary_blue_dark,
     marginBottom: '3%',
-    fontSize: SCREEN_WIDTH>400 ? 15 : 11,
+    fontSize: SCREEN_WIDTH>500 ? 18 : SCREEN_WIDTH>400 ? 15 : 11,
     height: '15%',
   },
   contentText: {
     color: colors.primary_blue_dark,
     height: '15%',
-    fontSize: SCREEN_WIDTH>400 ? 15 : 11,
+    fontSize: SCREEN_WIDTH>500 ? 18 : SCREEN_WIDTH>400 ? 15 : 11,
   },
   insideContainer: {
     flexDirection: 'row',
@@ -275,12 +275,13 @@ export const NotificationsStyles = StyleSheet.create({
     borderColor: colors.primary_blue_dark,
     alignItems: 'center',
     justifyContent: 'center',
-    padding: SCREEN_WIDTH>400 ? '3%' : '1%',
+    padding: SCREEN_WIDTH>400&&SCREEN_WIDTH<500 ? '3%' : '1%',
     width: '48%',
+    minHeight: SCREEN_WIDTH>500 ? 50 : 5,
   },
   declineText: {
     color: colors.primary_blue_dark,
-    fontSize: SCREEN_WIDTH>400 ? 15 : 11,
+    fontSize: SCREEN_WIDTH>500 ? 18 : SCREEN_WIDTH>400 ? 15 : 11,
     fontWeight: 'bold',
   },
   acceptBtnContainer: {
@@ -290,12 +291,13 @@ export const NotificationsStyles = StyleSheet.create({
     borderColor: colors.primary_blue_dark,
     alignItems: 'center',
     justifyContent: 'center',
-    padding: SCREEN_WIDTH>400 ? '3%' : '1%',
+    padding: SCREEN_WIDTH>400&&SCREEN_WIDTH<500 ? '3%' : '1%',
     width: '48%',
+    minHeight: SCREEN_WIDTH>500 ? 50 : 5,
   },
   acceptText: {
     color: 'white',
-    fontSize: SCREEN_WIDTH>400 ? 15 : 11,
+    fontSize: SCREEN_WIDTH>500 ? 18 : SCREEN_WIDTH>400 ? 15 : 11,
     fontWeight: 'bold',
   },
   flatListContainer: {

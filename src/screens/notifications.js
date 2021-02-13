@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, ImageBackground, Text, TouchableOpacity, View, } from 'react-native';
+import { Dimensions, FlatList, ImageBackground, Text, TouchableOpacity, View, } from 'react-native';
 
 import { LinearGradient } from 'expo-linear-gradient';
 
@@ -44,7 +44,7 @@ export default class Home extends React.Component {
           <Text adjustsFontSizeToFit={true} style={NotificationsStyles.authorText}>Admin</Text>
           <Text adjustsFontSizeToFit={true} style={NotificationsStyles.contentText}>Debited 2,000,000 L.L. in your account</Text>
           <View style={NotificationsStyles.insideContainer}>
-            <TouchableOpacity style={NotificationsStyles.declineBtnContainer}>
+            <TouchableOpacity style={NotificationsStyles.declineBtnContainer} onPress={() => {console.log(Dimensions.get("screen").width);}}>
               <Text adjustsFontSizeToFit={true} style={NotificationsStyles.declineText}>DECLINE</Text>
             </TouchableOpacity>
             <TouchableOpacity style={NotificationsStyles.acceptBtnContainer}>
